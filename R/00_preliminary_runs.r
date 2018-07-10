@@ -13,7 +13,7 @@ library(dplyr)
 # load temperature data for the Garda lake (Salmaso et al., 2003) as an example
 # data frame with date, year and wt (= water temperature - upper layer [0-15 m] in this case)
 
-load(here::here("data/wtemp.RData"))
+load(here::here("R/data/wtemp.RData"))
 wtemp$date <- as.Date(wtemp$date)
 # ggplot(wtemp, aes(date, wt)) + geom_line() + theme_few() + ylab('Water temperature (°C)') + scale_x_date(date_breaks = "1 month", date_labels =  "%b %Y") + theme(axis.text.x=element_text(angle=90, hjust=1))
 
